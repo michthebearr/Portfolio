@@ -1,0 +1,12 @@
+/* Custom dark navy blue background for about-me section */
+#about-me > section.section-parallax {
+    background: #09203a !important;
+    color: #fff;
+}
+#about-me > section.section-parallax h1,
+#about-me > section.section-parallax h2,
+#about-me > section.section-parallax p,
+#about-me > section.section-parallax span,
+#about-me > section.section-parallax a {
+    color: #fff !important;
+}
