@@ -41,3 +41,24 @@
     font-size: 1.1em;
     top: 0.1em;
 }
+
+/* Custom background for SEND MESSAGE section */
+#say-hello .section.bg-color-primary {
+    background: #09203a !important;
+}
+
+/* Custom SEND MESSAGE submit button style */
+#say-hello input[type="submit"] {
+    background: #d3d3d3 !important;
+    color: #fff !important;
+    border: none !important;
+    border-radius: 2em !important;
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.4em 1.5em !important;
+    box-shadow: none;
+    transition: background 0.2s;
+}
+#say-hello input[type="submit"]:hover {
+    background: #bcbcbc !important;
+}
