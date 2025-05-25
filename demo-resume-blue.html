@@ -46,6 +46,9 @@
 		<!-- Theme Custom CSS -->
 		<link rel="stylesheet" href="css/custom.css">
 
+		<!-- Add AOS CSS in the <head> -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+
 	</head>
 	<body data-plugin-scroll-spy data-plugin-options="{'target': '.wrapper-spy'}">
 
@@ -244,7 +247,7 @@
 								<h2 class="text-color-dark text-uppercase font-weight-extra-bold">Work Experience</h2>
 								<section class="timeline custom-timeline" id="timeline">
 									<div class="timeline-body">
-										<article class="timeline-box right custom-box-shadow-2">
+										<article class="timeline-box right custom-box-shadow-2" data-aos="fade-up" data-aos-delay="0">
 											<div class="row">
 												<div class="experience-info col-lg-3 col-sm-5 bg-color-primary">
 													<span class="from text-color-light text-uppercase">
@@ -274,7 +277,7 @@
 												</div>
 											</div>
 										</article>
-										<article class="timeline-box right custom-box-shadow-2">
+										<article class="timeline-box right custom-box-shadow-2" data-aos="fade-up" data-aos-delay="100">
 											<div class="row">
 												<div class="experience-info col-lg-3 col-sm-5 bg-color-primary">
 													<span class="from text-color-light text-uppercase">
@@ -304,7 +307,7 @@
 												</div>
 											</div>
 										</article>
-										<article class="timeline-box right custom-box-shadow-2">
+										<article class="timeline-box right custom-box-shadow-2" data-aos="fade-up" data-aos-delay="200">
 											<div class="row">
 												<div class="experience-info col-lg-3 col-sm-5 bg-color-primary">
 													<span class="from text-color-light text-uppercase">
@@ -630,6 +633,16 @@
 
 		<!-- Theme Initialization Files -->
 		<script src="js/theme.init.js"></script>
+
+		<!-- Add AOS JS before </body> -->
+		<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+		<script>
+		  AOS.init({
+			once: true, // Animation happens only once
+			duration: 400, // Faster animation duration
+			offset: 120 // Offset (in px) from the original trigger point
+		  });
+		</script>
 
 	</body>
 </html>
